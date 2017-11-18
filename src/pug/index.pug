@@ -1,0 +1,41 @@
+extends inc/core/_base
+
+include inc/core/_config
+block title
+  title= title
+block prepend meta
+  - var sitename = name
+  - var keywords = page.top.keywords
+  - var description = page.top.description
+  - var ogpimage = page.top.ogpimage
+  - var bodyClass = 'home'
+block append meta
+block body
+  .l-container
+    include inc/layout/_l-header
+
+    #main.l-main
+      div.l-main__inner
+        h1 Hello Service Worker.
+
+        div.l-main__row
+          p Service Worker has 
+            code#statusControlled
+          p Service Worker is 
+            code#statusRegister not registered
+          p Initial Service Worker status is 
+            code#statusKind
+
+        div.l-main__row
+          p Service Worker States
+          ol#states
+
+        div.l-main__row
+          button#buttonFetch.btn.btn-default Fetch
+
+      div.l-main__inner
+        div.l-main__row
+          div#targetImage
+
+    include inc/layout/_l-footer
+block append scriptFooter

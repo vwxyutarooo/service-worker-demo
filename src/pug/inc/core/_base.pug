@@ -1,0 +1,25 @@
+doctype html
+html(xmlns:og="http://ogp.me/ns#", xmlns:fb='https://www.facebook.com/2008/fbml')
+  head
+    meta(charset='UTF-8')
+    block title
+    block meta
+      meta(name='description', content=description)
+      meta(name='keywords', content=keywords)
+      meta(property='og:type', content='website')
+      meta(property='og:locale', content='ja_JP')
+      meta(property='og:site_name', content=name)
+      meta(property='og:title', content=title)
+      meta(property='og:description', content=description)
+      meta(property='og:image', content=ogpimage)
+    block link
+      link(rel='icon', href='/favicon.png')
+      link(rel='shortcut icon', href='/favicon.ico')
+      link(rel='apple-touch-icon', href='/apple-touch-icon.png')
+      link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+      link(rel='stylesheet', href='/dist/css/app.css')
+    block script
+  body(class=bodyClass)
+    block body
+    block scriptFooter
+      script(src="/dist/js/bundle.common.js")

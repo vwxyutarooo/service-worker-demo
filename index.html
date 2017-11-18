@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="site name">
+    <meta property="og:title">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <link rel="icon" href="/favicon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/css/app.css">
+  </head>
+  <body class="home">
+    <div class="l-container">
+      <header class="l-header"></header>
+      <div class="l-main" id="main">
+        <div class="l-main__inner">
+          <h1>Hello Service Worker.</h1>
+          <div class="l-main__row">
+            <p>Service Worker has <code id="statusControlled"></code></p>
+            <p>Service Worker is <code id="statusRegister">not registered</code></p>
+            <p>Initial Service Worker status is <code id="statusKind"></code></p>
+          </div>
+          <div class="l-main__row">
+            <p>Service Worker States</p>
+            <ol id="states"></ol>
+          </div>
+          <div class="l-main__row">
+            <button class="btn btn-default" id="buttonFetch">Fetch</button>
+          </div>
+        </div>
+        <div class="l-main__inner">
+          <div class="l-main__row">
+            <div id="targetImage"></div>
+          </div>
+        </div>
+      </div>
+      <footer class="l-footer"></footer>
+    </div>
+    <script src="/dist/js/bundle.common.js"></script>
+  </body>
+</html>

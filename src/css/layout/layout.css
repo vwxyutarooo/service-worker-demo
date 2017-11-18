@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+
+.l-main {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+
+  &__inner {
+    min-width: 200px;
+  }
+
+  &__row {
+    margin: 2em 0;
+  }
+}
